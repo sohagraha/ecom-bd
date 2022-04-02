@@ -1,9 +1,6 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Link, Typography } from '@mui/material'
-import Head from 'next/head'
-import Image from 'next/image'
 import NextLink from 'next/link'
 import Layout from '../components/Layout'
-import styles from '../styles/Home.module.css'
 import data from '../utils/data'
 
 export default function Home() {
