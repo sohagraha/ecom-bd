@@ -4,12 +4,13 @@ import React from 'react'
 import { AppBar, Container, Link, Toolbar, Typography } from '@mui/material';
 import useStyles from '../utils/styles'
 
-export default function Layout({ children }) {
+export default function Layout({ title, description, children }) {
     const classes = useStyles();
     return (
         <div>
             <Head>
-                <title>ECOM BD</title>
+                <title>{title ? `${title} - ECOM BD` : 'ECOM BD'}</title>
+                {description && <meta name="description" content={description}></meta>}
             </Head>
             <AppBar position="static" className={classes.navbar}>
                 <Toolbar>
