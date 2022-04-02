@@ -7,13 +7,14 @@ export default class MyDocument extends Document {
         return (
             <Html land='eng'>
                 <Head>
-                    <body>
-                        <Main />
-                        <NextScript />
-                    </body>
+
                 </Head>
+                <body>
+                    <Main />
+                    <NextScript />
+                </body>
             </Html>
-        )
+        );
     }
 }
 
